@@ -78,9 +78,27 @@
 }
 .ex-10-icon {
     font-size: 60px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
 }
 .ex-11-icon {
     font-size: 60px;
+    animation: spinALittleBit 5s linear;
+}
+@keyframes spinALittleBit {
+    0% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(300deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }
 .ex-12-button, .ex-13-button {
     position: relative;
